@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday Olpiinnn!</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right, #ffe6eb, #ffd6f5);
+      font-family: 'Poppins', sans-serif;
+      color: #800040;
+      overflow: hidden;
+    }
+
+    .container {
+      text-align: center;
+      padding: 30px;
+    }
+
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 2em;
+      animation: typing 4s steps(30) 1;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 3px solid #800040;
+      width: 100%;
+      max-width: 500px;
+      margin: 20px auto;
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+    img {
+      max-width: 300px;
+      border-radius: 20px;
+      margin: 20px 0;
+      box-shadow: 0 0 20px rgba(255, 105, 180, 0.5);
+    }
+
+    p {
+      font-size: 1.2em;
+      margin: 20px auto;
+      max-width: 600px;
+      word-wrap: break-word;
+    }
+
+    .hearts {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    .heart {
+      position: absolute;
+      color: pink;
+      animation: float 10s linear infinite;
+      font-size: 20px;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(100vh) rotate(720deg);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Musik romantis autoplay -->
+  <audio autoplay loop>
+    <source src="Happy.mp3" type="audio/mpeg">
+    Browser kamu tidak mendukung pemutar audio.
+  </audio>
+
+  <div class="container">
+    <h1>Happy Birthday Olpinn 💖</h1>
+    <img src="cat.jpg" alt="cat">
+    <p>
+        Selamat ulang tahun, gantenggg... Olpinn! 
+      Semoga tuhan selalu ada di setiap langkahmu, panjang umur, sehat selaluu, begadangnya dikurang'nginn jangan main muluu inget waktu (moga teman'mu juga bisa paham waktu istirahat) kasian kamu kecapean muluuu, jangan ngeyell, bahagiaa teruss yaa.. 
+      Kamu kalau ada apa' jangan sungkan buat cerita ke akuuu, semoga semua doa yang kamu panjatkan bisa terwujudkan, semangatt ya ganteng.. Aku kangen kamu, semoga kita bisa bareng' saling mengenal satu sama lain to much but i hope you understand what i mean, have fun, eh aku mintaa maaf ya kalau ada salah dari ucapan dan tingkah laku, moga kamu ga ilfil yaa hehe, sama maaf kalau aku ganggu tapi semoga semuanya baik' aja dan aku ga ganggu, sekali lagii HAPPY BIRTHDAY yaaaa bocill!! 🎉😻
+    </p>
+  </div>
+
+  <div class="hearts">
+    <!-- Generate hearts -->
+    <script>
+      for (let i = 0; i < 30; i++) {
+        let heart = document.createElement('div');
+        heart.className = 'heart';
+        heart.style.left = Math.random() * 100 + 'vw';
+        heart.style.animationDuration = (5 + Math.random() * 5) + 's';
+        heart.style.fontSize = (10 + Math.random() * 20) + 'px';
+        heart.innerHTML = '💗';
+        document.querySelector('.hearts').appendChild(heart);
+      }
+    </script>
+  </div>
+
+</body>
+</html>
