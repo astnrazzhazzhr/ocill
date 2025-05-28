@@ -7,17 +7,17 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins&display=swap');
 
-    body {
+   html, body {
       margin: 0;
       padding: 0;
-      background: linear-gradient(to bottom right, #ffe6eb, #ffd6f5);
       font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom right, #ffe6eb, #ffd6f5);
       color: #800040;
-      overflow: hidden; /* cegah scroll horizontal */
+      overflow-x: hidden; /* cegah scroll horizontal */
       min-height: 100vh;
     }
 
-    .container {
+     .container {
       text-align: center;
       padding: 30px 20px 80px; /* padding bawah ditambah agar tidak mepet */
       max-width: 700px;
@@ -43,6 +43,7 @@
 
     img {
       max-width: 300px;
+      width: 100%;
       border-radius: 20px;
       margin: 20px 0;
       box-shadow: 0 0 20px rgba(255, 105, 180, 0.5);
